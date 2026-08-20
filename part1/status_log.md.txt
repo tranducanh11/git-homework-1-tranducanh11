@@ -1,0 +1,36 @@
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+ On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   notes.txt
+        new file:   todo.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        draft.md
+        status_log.md.txt
+diff --git a/part1/notes.txt b/part1/notes.txt
+index 47bc1a3..e4e8043 100644
+--- a/part1/notes.txt
++++ b/part1/notes.txt
+@@ -1 +1,4 @@
+ N?i dung note
++Dong thu 1
++Dong thu 2
++Dong thu 3
+
+"Lệnh git commit -a tự động đưa tất cả các file đã bị chỉnh sửa vào khu vực chuẩn bị (staging area) rồi tiến hành commit luôn, giúp bỏ qua bước gõ git add thủ công. Tuy nhiên, lệnh này chỉ hoạt động với các file đã được Git theo dõi (tracked files). Đối với các file hoàn toàn mới được tạo (untracked files), Git chưa lưu trữ dữ liệu của chúng bao giờ nên không thể tự động nhận diện và gom chúng vào lệnh này được."
+
+Phân biệt git fetch và git pull:
+git fetch: Chỉ tải (download) toàn bộ dữ liệu, các commit mới và cập nhật các nhánh theo dõi từ xa (remote-tracking branches) từ máy chủ về máy cục bộ. Lệnh này không tự động gộp (merge) hay làm thay đổi bất kỳ dòng code nào trong thư mục làm việc hiện tại của bạn.
+
+git pull: Là sự kết hợp của git fetch và git merge. Lệnh này vừa tải dữ liệu mới từ máy chủ về, vừa tự động gộp ngay các thay đổi đó vào nhánh bạn đang đứng làm việc.
