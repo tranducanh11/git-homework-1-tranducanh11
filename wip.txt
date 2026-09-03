@@ -1,1 +1,2 @@
 Noi dung file wip 
+Noi dung moi cho phan C 
